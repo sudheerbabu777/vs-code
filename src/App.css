@@ -1,0 +1,133 @@
+.app-container{
+  overflow: hidden;
+  position:absolute;
+   left: 50%;
+  top:50%; 
+  display: flex;
+  justify-self: center;
+  align-items: center;  
+}
+
+span::before{
+  background-image: linear-gradient(#33df,rgba(22, 6, 246, 0.267),rgba(2, 24, 185, 0.6),#1a0ce6);
+  content:'';
+  position: absolute;
+  top: -70%;
+  left:-80%;
+  width:360px;
+  height:460px;
+  animation: animate 6s linear infinite;
+  z-index:-1;
+  transform-origin:bottom right ;
+  border:3px solid;
+  
+
+}
+
+span::after{
+  background-image: linear-gradient(#33df,rgba(22, 6, 246, 0.267),rgba(2, 24, 185, 0.6),#1a0ce6);
+  content:'';
+  position: absolute;
+  top: -70%;
+  left:-80%;
+  width:360px;
+  height:460px;
+  animation: animate 6s linear infinite;
+  z-index:-1;
+  transform-origin:bottom right ;
+  border:3px solid;
+  animation-delay: -3s;
+}
+
+@keyframes animate{
+  0%{
+    transform: rotate(0deg);
+  }
+  
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+.from {
+background-color: blueviolet;
+height:350px;
+width:300px;
+display: flex;
+flex-direction: column;
+align-items: center;
+/* justify-content: space-evenly; */
+border-radius: 6px;
+margin: 4px;  
+box-shadow:0px 4px 16px 0px  #bfbfbf;
+
+
+
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+h1{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 34px;
+  font-weight:600 ;
+  color:black;
+}
+
+input{
+  padding:8px;
+  outline:1.5px solid black;
+  background-color: transparent;
+  border:none;
+  margin-bottom: 12px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight:500 ;
+  color:blanchedalmond;
+
+
+}
+
+label{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight:500 ;
+  color:black;
+}
+
+button{
+  outline: none;
+  border: none;
+  background-color: lightskyblue;
+  padding:8px;
+  padding-left:12px;
+  padding-right:12px;
+  padding-bottom:8px;
+  padding-top:8px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 16px;
+  font-weight:500 ;
+  color:black;
+  border-radius:8px ;
+}
+
+.btn:hover::before{
+  position: relative;
+  left:0px;
+
+}
+
+.btn:hover{
+  background-color: brown;
+  position: relative;
+  left:100px;
+  transform: 3s;
+}
+
+
